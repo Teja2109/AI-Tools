@@ -1,0 +1,14 @@
+import numpy as np
+arr = np.array([[11, 2, 3],[4, 5, 16],[7, 81, 22]])
+print('maximum element in the array is:', np.max(arr))
+print('minimumm element in the array is:',np.min(arr))
+print('maximum elements in the columns of the array is:',np.max(arr, 0))
+print('maximum elements in the rows of the array is:',np.max(arr, 1))
+print('minimum elements in the columns of the array is:',np.min(arr, 0))
+print('minimum elements in the rows of the array is:',np.min(arr, 1))
+# mean of the flattened array
+print("\nmean of arr, axis = None : ", np.mean(arr))
+ # mean along the axis = 0 (row-wise)
+print("\nmean of arr, axis = 0 : ", np.mean(arr,0))
+ # mean along the axis = 1 (Column-wise)
+print("\nmean of arr, axis = 1 : ", np.mean(arr,1)) 
